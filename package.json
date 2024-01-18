@@ -1,0 +1,40 @@
+{
+  "name": "pr-glance",
+  "version": "1.0.0",
+  "private": true,
+  "description": "size label and description with preview link for Pull Requests",
+  "author": "Tanmay Shinde",
+  "license": "ISC",
+  "homepage": "https://github.com//",
+  "keywords": [
+    "probot",
+    "github",
+    "probot-app"
+  ],
+  "scripts": {
+    "dev": "nodemon",
+    "start": "probot run ./src/index.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@noqcks/generated": "^7.23.0",
+    "@octokit/rest": "^20.0.2",
+    "nodemon": "^3.0.2",
+    "openai": "^4.24.1",
+    "probot": "^12.2.4"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "nock": "^13.0.5",
+    "smee-client": "^1.2.2"
+  },
+  "engines": {
+    "node": ">= 10.13.0"
+  },
+  "nodemonConfig": {
+    "exec": "npm start"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}

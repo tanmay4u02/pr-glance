@@ -1,6 +1,6 @@
 # pr-glance
 
-> A GitHub App built with [Probot](https://github.com/probot/probot) that size label and description with preview link for Pull Requests
+> A GitHub App built with Node.js(probot) that adds size label and description with preview link for Pull Requests
 
 ## Setup
 

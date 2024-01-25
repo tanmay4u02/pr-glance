@@ -15,8 +15,8 @@ module.exports = (app) => {
     async (ctx) => {
       await add_size_label(ctx);
 
-      if (await github.isDescrAndPreviewWanted(ctx, app)) {
-        app.log("Generating PR Descr and Preview Comment");
+      if (await github.isDescrAndPreviewWanted(ctx)) {
+        app.log.info("Generating PR Descr and Preview Comment");
 
         const prComment = await github.generateComment(ctx);
 

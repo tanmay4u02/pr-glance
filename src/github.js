@@ -4,7 +4,7 @@ const { Octokit } = require("@octokit/rest");
 
 const octokit = new Octokit();
 
-function isDescrAndPreviewWanted(ctx, app) {
+function isDescrAndPreviewWanted(ctx) {
   const { commits_url, comments_url, title, body } =
     context.getPullRequest(ctx);
 
